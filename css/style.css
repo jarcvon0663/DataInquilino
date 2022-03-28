@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root{
+    --color-primary: #444CF7;
+    --color-title: #000;
+    --align-title: left;
+    --padding-container: 100px 0;
+    --width-container: 90%;
+    --max-width-container: 1200px;
+    --color-btn: #444CF7;
+    --text-btn: #fff;
+    --padding-btn: 20px 35px;
+    --height-shape:18em;
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5F7;
+    opacity: 1;
+    background-image:  radial-gradient(#444CF7 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#444CF7 0.7000000000000001px, #E5E5F7 0.7000000000000001px);
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
+}
+
+.container{
+    width: 90%;
+    max-width: var(--max-width-container);
+    padding: var(--padding-container);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Main */
+
+.main{
+    background: #fff;
+}
+
+/* course */
+
+.formulario-content{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid rgb(247, 39, 219);
+}
+.formulario-content h1{
+    color: rgb(146, 3, 87);
+    text-align: center;
+}
+
+.formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.formulario-content #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin: 30px 0px 10px 0px;
+}
+.formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid rgb(247, 39, 219);
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+.formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid rgb(247, 39, 219);
+    font-size: 15px;
+    color: #000;
+}
+.formulario-content #formulario .send{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.formulario-content #formulario a{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: rgb(146, 3, 87);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: auto;
+    text-decoration: none;
+}
+.formulario-content #formulario button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: rgb(146, 3, 87);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: auto;
+}
+.formulario-content #formulario button:hover{
+    background: greenyellow;
+}
+.formulario-content #formulario .mensaje-form{
+    width: 100%;
+    margin:auto;
+    padding:20px;
+}
+.formulario-content #formulario .mensaje-form p{
+    font-size:19px;
+    color: #000;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px){
+    :root{
+        --height-shape:14em;
+    }
+    /* Course */
+
+    .formulario-content{width: 85%; padding:20px;}
+    .formulario-content #formulario input{width: 100%;}
+    .formulario-content #formulario textarea{width: 100%;}
+
+}
+
+@media screen and (max-width: 500px){
+    :root{
+        --padding-btn: 20px 0;
+    }
+
+    /* Course */
+
+    .formulario-content{width: 95%; padding:20px;}
+    .formulario-content #formulario label{font-size: 17px;}
+    .formulario-content #formulario input{width: 100%; font-size: 17px;}
+    .formulario-content #formulario textarea{width: 100%;}
+    .formulario-content #formulario button{width: 80px; font-size: 14px;}
+    .formulario-content #formulario a{width: 80px; font-size: 14px;}
+    .formulario-content #formulario .mensaje-form p{font-size: 17px;}
+    
+}
