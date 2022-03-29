@@ -74,6 +74,17 @@ body{
     font-size: 18px;
     color: #000;
 }
+.formulario-content #formulario select{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid rgb(247, 39, 219);
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
 .formulario-content #formulario textarea{
     width: 90%;
     height: 200px;
